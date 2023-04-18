@@ -46,7 +46,7 @@ const messageInput = document.querySelector('#message');
 
 // Обрабатываем событие отправки формы
 form.addEventListener('submit', (event) => {
-  event.preventDefault(); // Отменяем стандартное поведение формы
+  event.preventDefault(); 
 
   // Получаем значения полей ввода
   const name = nameInput.value.trim();
@@ -82,7 +82,7 @@ form.addEventListener('submit', (event) => {
       console.error('Ошибка отправки сообщения в Телеграм:', error);
     });
 
-  // Очищаем поля формы
+  
   nameInput.value = '';
   emailInput.value = '';
   messageInput.value = '';
